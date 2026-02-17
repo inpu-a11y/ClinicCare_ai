@@ -1,0 +1,8 @@
+{
+  "name": "ClinicCare AI",
+  "description": "ระบบบริหารจัดการคลินิกทันสมัยพร้อมผู้ช่วย AI อัจฉริยะ สำหรับจัดการผู้ป่วย นัดหมาย และเวชระเบียน",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
