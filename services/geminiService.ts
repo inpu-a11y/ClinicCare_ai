@@ -1,13 +1,11 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { AIGeneratedSoap } from "../types";
 
-const apiKey = process.env.API_KEY || '';
-const ai = new GoogleGenAI({ apiKey });
+// The API key must be obtained exclusively from the environment variable process.env.API_KEY.
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 // Helper to structure medical notes into SOAP format
 export const generateSoapNote = async (rawNotes: string): Promise<AIGeneratedSoap | null> => {
-  if (!apiKey) return null;
-
   try {
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
@@ -44,8 +42,6 @@ export const generateSoapNote = async (rawNotes: string): Promise<AIGeneratedSoa
 
 // Helper to provide general medical information or terminology explanation
 export const askMedicalAssistant = async (query: string): Promise<string> => {
-  if (!apiKey) return "API Key missing.";
-
   try {
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
