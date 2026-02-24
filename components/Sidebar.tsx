@@ -12,7 +12,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentView, onChangeView }) => {
     { id: ViewState.DASHBOARD, label: 'แดชบอร์ด', icon: LayoutDashboard },
     { id: ViewState.SCREENING, label: 'จุดคัดกรอง (Screening)', icon: ClipboardList }, 
     { id: ViewState.OPD, label: 'ห้องตรวจแพทย์ (OPD)', icon: Activity },
-    { id: ViewState.TELEMEDICINE, label: 'Telemedicine', icon: Video }, // New Item
+    { id: ViewState.TELEMEDICINE, label: 'Telemedicine', icon: Video },
     { id: ViewState.CASHIER, label: 'การเงินและชำระเงิน', icon: Wallet },
     { id: ViewState.DOCTOR_FEES, label: 'จัดการค่าแพทย์ (DF)', icon: Coins },
     { id: ViewState.PATIENTS, label: 'เวชระเบียนผู้ป่วย', icon: Users },

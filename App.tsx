@@ -10,7 +10,7 @@ import InventoryManager from './components/InventoryManager';
 import CashierManager from './components/CashierManager';
 import DoctorFeeManager from './components/DoctorFeeManager';
 import ScreeningManager from './components/ScreeningManager';
-import TelemedManager from './components/TelemedManager'; // Import Telemed
+import TelemedManager from './components/TelemedManager';
 import Login from './components/Login';
 import { ViewState, Patient, Staff, Medicine, MedicalRecord, Appointment, Transaction, ClinicService } from './types';
 
